@@ -1,0 +1,186 @@
+[
+  {
+    "variant_id": "rs28934578",
+    "gene": "TP53",
+    "protein_id": "P04637",
+    "wildtype_aa": "R",
+    "mutant_aa": "H",
+    "position": 175,
+    "sequence_with_mutation": "MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYPQGLNGTVNLFRNLNKSPQPQKRPQKKNGRQMISALAHQLSQGQMTPEDGVRPFSNNPSAVPSSSPFTRDLFSSSTGTGNNKPIPQRSGRKRALPNVSSVRGMAEESGFRAFNLMTAASPPDEGPGEQNVSATCPMDNEGPSDSQSGPLSMRSSSSSSSTVFLNLKRGSRTRNTTMEEFEGQPAGCRSRMAERQGEELPPQHRMRQREQEGEQGPEEELRGRQSERRHRPTAAESQPDPDGDRGNKLPRPGEERTQ",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Li-Fraumeni syndrome",
+      "Colorectal cancer",
+      "Lung cancer",
+      "Breast cancer"
+    ],
+    "clinvar_id": "12375",
+    "source": "ClinVar 12375",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs80357382",
+    "gene": "BRCA1",
+    "protein_id": "P38398",
+    "wildtype_aa": "C",
+    "mutant_aa": "G",
+    "position": 61,
+    "sequence_with_mutation": "MDLSALRVEEVQNVINAMQKILECPICLELIKEPVSTKCDHIFCKFGMLKLLNQKKGPSQCPLCKNDITKRSLQESTRFSQLVEELLKIICAFQLDTGLEYANSYNFAKKENNSPEHLKDEVSIIQSMGYRNACKDNPQSDQSIKKEILENSMKQNQKKMSLYQQQAKLIHQHQSRKSSLYQQSQASHRQVTRQALHDQLAKKQKQNLGSSLSGQAAAQGLRTKKMLDSDVQQQLKELRQNEGKTSLSKLELTLRNQQKSSEHEQTIDQRRQHHHKQLRMQIQKKVQMNQSEVTLQAHQDLVSQMQIQEQLKLAQLQQKKNPKLMDQLQQLMKQEQEMLKKLQEKVQTRQEMIQKQLQEQEMLK",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Hereditary breast and ovarian cancer syndrome",
+      "Breast cancer",
+      "Ovarian cancer"
+    ],
+    "clinvar_id": "55407",
+    "source": "ClinVar 55407",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs121434568",
+    "gene": "EGFR",
+    "protein_id": "P00533",
+    "wildtype_aa": "T",
+    "mutant_aa": "M",
+    "position": 790,
+    "sequence_with_mutation": "MRPSGTAGAALLALLAALCPASRALEEKKVCQGTSNKLTQLGTFEDHFLSLQRMFNNCEVVLGNLEITYVQRNYDLSFLKTIQEVAGYVLIALNTVERIPLENLQIIRGNMYYENSYALAVLSNYDANKTGLKELPMRNLQEILHGAVRFSNNPALCNVESIQWRDIVSSDFLSNMSMDFQNHLGSCQKCDPSCPNGSCWGAGEENCQKLTKIICAQQCSGRCRGKSPSDCCHNQCAAGCTGPRESDCLVCRKFRDEATCKDTCPPLMLYNPMTYQMDVNPEGKYSFGATCVKKCPRNYVVTDHGSCVRACGADSYEMEEDGVR",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Non-small cell lung carcinoma",
+      "Lung adenocarcinoma",
+      "Erlotinib resistance"
+    ],
+    "clinvar_id": "16609",
+    "source": "ClinVar 16609",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs113488022",
+    "gene": "BRAF",
+    "protein_id": "P15056",
+    "wildtype_aa": "V",
+    "mutant_aa": "E",
+    "position": 600,
+    "sequence_with_mutation": "MAHHHHHHMASGAAASPCWGQGTSELPQQVSPDKAATTTLSGPGLRDRSGGQRKDLSTPPRSPPVDPNPKPPSVNQNQNLPQATTTLSDTATPASMPAVKKVGAQKAAIVDAAVNTDLLMQMSTQELSSASGPPTLSADLKNIVSQITQMPQAAQTAATAMSQSTQQMSQSSGCPSTTAASPAPTATLRTLQQQPLSQEHVQITQKLEAQERSSFRNRPIGYTATGSQHGSGLQNLSFKQHYQIRQNSHQNNQNISQDSQGHRQNMPLTGRQLEALCEDLHQQPTQPFHALTPRGQHSQPIQSQTSSLTAQAMTLNPRDCQNQITQMQESMQQDLARSQMPEAQQAQAQLQAQLGQQKLPAQQLQKQQEQQIQQLHARQVQELKAQTQEQHQAQLQSQLQEAQAQLHQLQEQQEAQERLQEQQTQMQAQLQAQAMEQQAQLQEQQAQLQALQAQAQQLQAQALQ",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Melanoma",
+      "Colorectal cancer",
+      "Non-small cell lung carcinoma",
+      "Hairy cell leukemia"
+    ],
+    "clinvar_id": "13961",
+    "source": "ClinVar 13961",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs121913529",
+    "gene": "KRAS",
+    "protein_id": "P01116",
+    "wildtype_aa": "G",
+    "mutant_aa": "D",
+    "position": 12,
+    "sequence_with_mutation": "MTEYKLVVVDDGVGKSALTIQLIQNHFVDEYDPTIGDVFLRLYSDIPADSPEDLRSYLAQLREQILREADDAEQSAFLSQKTVEQTEEQLRDLVKEQNLSAFLEQLKEQCMDLSSFLQSSLEQLKEQSMDLSSFLQGSLEQLKEQCMDLSSFLQ",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Pancreatic cancer",
+      "Colorectal cancer",
+      "Lung adenocarcinoma",
+      "Noonan syndrome"
+    ],
+    "clinvar_id": "12582",
+    "source": "ClinVar 12582",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs121912442",
+    "gene": "SOD1",
+    "protein_id": "P00441",
+    "wildtype_aa": "A",
+    "mutant_aa": "V",
+    "position": 4,
+    "sequence_with_mutation": "MATVKAVCVLKGDGPVQGIINFEQKESNGPVKVWGSIKGLTEGLHGFHVHEFGDNTAGCTSAGPHFNPLSRKHGGPKDEERHVGDLGNVTADKDGVADVSIEDSVISLSGDHCIIGRTLVVHEKADDLGKGGNEESTKTGNAGSRLACGVIGIAQ",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Amyotrophic lateral sclerosis type 1",
+      "ALS-SOD1"
+    ],
+    "clinvar_id": "6787",
+    "source": "ClinVar 6787",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs121909233",
+    "gene": "PTEN",
+    "protein_id": "P60484",
+    "wildtype_aa": "R",
+    "mutant_aa": "Q",
+    "position": 130,
+    "sequence_with_mutation": "MTAIIKEIVSRNKRRYQEDGFDLDLTYIYPNIIAMGFPAERLEGVYRNNIDDVVRFLDSKHKNHYKIYNLCAERHYDTAKFNCRVAQYPFEDHNPPQLELIKPFCEDLDQWLSEDDNHVAAIHCKAGKGRTGVMICAYLLHRGKFLKAQEALDFYGEVRTRDKKGVTIPSQRRYVYYYSYLLKNHLDYRPVALLFHKMMFETIPMFSGGTCNPQFVVCQLKVKIYSSNSGPTRREDKFMYFEFPQPLPVCGDIKVEFFHKQNKMLKKDKMFHFWVNTFFAHPPPYSVLYNSTLYQLCQYFNNQKLSLEEKDHIHRVDFMLNIFSTMAKHKSEELNKLFGRDSFEVR",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Cowden syndrome",
+      "PTEN hamartoma tumor syndrome",
+      "Bannayan-Riley-Ruvalcaba syndrome"
+    ],
+    "clinvar_id": "13303",
+    "source": "ClinVar 13303",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs121913500",
+    "gene": "IDH1",
+    "protein_id": "O75874",
+    "wildtype_aa": "R",
+    "mutant_aa": "H",
+    "position": 132,
+    "sequence_with_mutation": "MSSSKGKVVLKGDGPVQGIINFEQKESNGPVKVWGSIKGLTEGLHGFHVHEFGDNTAGCTSAFSHNVTKDGVVSIEDSVISLNGHCIIGRTLVVHEKADDLGKGGNQESTKTGNAGSRLACGVIGIAQKKLGISIPEDGPLNKEEHLKKLFEGQEGGPGLVQELQDKIVNIFKEQNASQAALMKALGDRTHEKSVNQLQKLLEERIGELPAGTVEFLKKLNELQNLQSQVLERKHRRPQHQRRGREKPRLDQEQELQSHQHAQQQTQRLQIQELQREQNEQQQQLQAQNRQLHQQLEELQAAIQRQLENIQSLAQQQEQQLQRQ",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Glioblastoma",
+      "Acute myeloid leukemia",
+      "Chondrosarcoma",
+      "Low-grade glioma"
+    ],
+    "clinvar_id": "12539",
+    "source": "ClinVar 12539",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs121913279",
+    "gene": "PIK3CA",
+    "protein_id": "P42336",
+    "wildtype_aa": "H",
+    "mutant_aa": "R",
+    "position": 1047,
+    "sequence_with_mutation": "MPPRPSSGELWGIHLMPPRILVECLLPNGMIVTLECLREATLIATIKHELFKEARYKAHSLTPYHFVQDLQELEKRLQRELQALQATLAQQESQTQLQAQEQQSQQLEQQLQAQQEQLQAQEQQLQAQEQLQAQEQQLQAQEQLQAQEQQSQQLEQQLQAQQEQLQAQEQQLQAQEQLQAQEQQSQQLEQQLQAQQEQLQAQEQQLQAQEQLQAQEQQSQQLEQQLQAQQEQLQAQEQQLQAQEQLQAQERQLQAQEQQLQAREQLQAQEQQLQAQEQLQAQEQQSQQLEQQLQARQEQLQAQEQQLQAQEQLQAQEQQSQQLEQQLQAQEQLQAQEQQLQAQEQLQAQEQQLQAMHR",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Breast cancer",
+      "Colorectal cancer",
+      "Endometrial cancer",
+      "CLAPO syndrome"
+    ],
+    "clinvar_id": "13652",
+    "source": "ClinVar 13652",
+    "difficulty": "hard"
+  },
+  {
+    "variant_id": "rs121913459",
+    "gene": "ABL1",
+    "protein_id": "P00519",
+    "wildtype_aa": "T",
+    "mutant_aa": "I",
+    "position": 315,
+    "sequence_with_mutation": "MGQNVSKNVATLPCREGHFLNLSGKKLKLKQLEKTLQMLQEQLAATQEQLSSQERKNQLQEQLAATQEQLAATQEQLSSQERKNQLQEQLAATQEQLSSQERKNQLQEQLAATQEQLSSQERKNQLQEQLAATQEQLAATQEQLSSQERKNQLQEQLAATQEQLSSQERKNQLQEQLAATQEQLAATQEQLSSQERKNQLQEQLAATQEQLSSQERKNQLQEQLAATQEQLSSQERKNQLQEQLAATQEQLSSQERQNQLQEQLAATQEQLSSQERQNQLQEQLAATQEQLSIQERQNQLQEQLAATQEQLSSQERQNQLQEQLAATQEQLSIQERQNQLQEQLAAIQEQLAATQEQLSSQERKNQLQEQLAATQEQLSSQERKNQLQEQLAATQEQLSSQER",
+    "pathogenicity": "Pathogenic",
+    "associated_diseases": [
+      "Chronic myelogenous leukemia",
+      "Imatinib resistance",
+      "Philadelphia chromosome-positive leukemia"
+    ],
+    "clinvar_id": "12368",
+    "source": "ClinVar 12368",
+    "difficulty": "hard"
+  }
+]

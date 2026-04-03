@@ -1,0 +1,45 @@
+spec_version: 1
+name: protein-env
+type: environment
+runtime: docker
+app: server/app.py
+port: 8000
+description: >
+  ProteinEnv is an OpenEnv environment for training AI agents to predict
+  protein function, Gene Ontology terms, and disease-variant associations
+  using Meta's ESM2 protein language model embeddings.
+tags:
+  - openenv
+  - bioinformatics
+  - protein
+  - esm2
+  - meta
+tasks:
+  - name: protein_family_classification
+    difficulty: easy
+    description: Classify a well-known protein into its correct protein family
+    max_steps: 10
+    score_range: [0.0, 1.0]
+  - name: go_term_prediction
+    difficulty: medium
+    description: Predict Gene Ontology terms for a moderately characterized protein
+    max_steps: 10
+    score_range: [0.0, 1.0]
+  - name: disease_variant_association
+    difficulty: hard
+    description: Identify pathogenicity and disease associations for a missense variant
+    max_steps: 10
+    score_range: [-0.1, 1.0]
+tools:
+  - name: get_esm2_embedding
+    description: >
+      Returns a 320-dimensional ESM2 embedding vector for a given amino acid
+      sequence. Use this to obtain a numerical representation of the protein
+      for reasoning about its function.
+    input_schema:
+      type: object
+      properties:
+        sequence:
+          type: string
+          description: Amino acid sequence using single-letter codes (e.g. MALWMR...)
+      required: [sequence]

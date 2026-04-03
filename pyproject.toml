@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "protein-env"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "OpenEnv environment for protein function prediction using ESM2"
+dependencies = [
+    "openenv-core>=0.2.1",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "websockets>=12.0",
+    "pydantic>=2.7.0",
+    "torch>=2.3.0",
+    "transformers>=4.40.0",
+    "huggingface-hub>=0.23.0",
+    "numpy>=1.26.0",
+    "scikit-learn>=1.5.0",
+    "python-dotenv>=1.0.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=5.0.0",
+    "httpx>=0.27.0",
+    "pre-commit>=3.7.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "--cov=. --cov-report=term-missing --cov-fail-under=80"
