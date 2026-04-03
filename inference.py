@@ -74,7 +74,15 @@ def main():
         
         for task in tasks:
             obs = env.reset(task_type=task)
-            messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+            
+            sys_prompt = SYSTEM_PROMPT
+            if task == "medium":
+                sys_prompt += "\n\nFor GO terms, predict using format GO:XXXXXXX (7 digits).\n"
+                sys_prompt += "Common molecular function terms: GO:0003700, GO:0005515, GO:0003677\n"
+                sys_prompt += "Common biological process terms: GO:0006915, GO:0043065, GO:0008150\n"
+                sys_prompt += "Common cellular component terms: GO:0005634, GO:0005737, GO:0005829"
+                
+            messages = [{"role": "system", "content": sys_prompt}]
             final_reward = 0.0
             
             for _ in range(MAX_STEPS_PER_EPISODE):

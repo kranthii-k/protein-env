@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProteinEnv Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-grid"></div>
+    <div class="glow-orb top-left"></div>
+    <div class="glow-orb bottom-right"></div>
+
+    <div class="app-container">
+        <header class="glass-header">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="spin-slow">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 17L12 22L22 17" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M2 12L12 17L22 12" stroke="var(--cyan)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h1>ProteinEnv</h1>
+            </div>
+            <div class="status-indicator" id="server-status">
+                <div class="pulse-dot"></div>
+                <span>Checking Server...</span>
+            </div>
+        </header>
+
+        <main class="dashboard-grid">
+            <section class="card glass-card info-card">
+                <h2>Environment Overview</h2>
+                <p>An OpenEnv reinforcement learning environment designed for training AI agents using Meta's ESM2 embeddings.</p>
+                
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label">Task Tiers</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-value">320<span class="dim">d</span></span>
+                        <span class="stat-label">Vector Space</span>
+                    </div>
+                    <div class="stat-box" id="version-box">
+                        <span class="stat-value">--</span>
+                        <span class="stat-label">Version</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card glass-card terminal-card">
+                <div class="tab-header">
+                    <button class="tab-btn active" data-target="easy">Easy</button>
+                    <button class="tab-btn" data-target="medium">Medium</button>
+                    <button class="tab-btn" data-target="hard">Hard</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div id="easy" class="tab-pane active">
+                        <h3>Family Classification</h3>
+                        <p class="description">Classify a well-known protein into its correct UniProt family.</p>
+                        <div class="mock-terminal">
+                            <span class="cmd">> env.reset(task_type="easy")</span>
+                            <span class="out">Observation: sequence="MALWMR...", length=320...</span>
+                            <span class="cmd">> agent.predict_family("Kinase")</span>
+                            <span class="out success">Reward: 1.0 (Done)</span>
+                        </div>
+                        <button class="action-btn" onclick="runSimulation('easy')">Simulate Episode</button>
+                    </div>
+
+                    <div id="medium" class="tab-pane">
+                        <h3>GO Term Prediction</h3>
+                        <p class="description">Predict Gene Ontology functional terms for an unknown sequence.</p>
+                        <div class="mock-terminal">
+                            <span class="cmd">> env.reset(task_type="medium")</span>
+                            <span class="out">Observation: sequence="MSQSN...", tools=["get_esm2"]</span>
+                            <span class="cmd">> tool.get_esm2_embedding()</span>
+                            <span class="out vector">[ -0.012, 0.442, ... ]</span>
+                            <span class="cmd">> agent.predict_go(["GO:0003700"])</span>
+                            <span class="out success">Reward: +0.8 (Done)</span>
+                        </div>
+                        <button class="action-btn" onclick="runSimulation('medium')">Simulate Episode</button>
+                    </div>
+
+                    <div id="hard" class="tab-pane">
+                        <h3>Disease & Pathogenicity</h3>
+                        <p class="description">Identify pathogenicity and disease associations for a missense variant.</p>
+                        <div class="mock-terminal">
+                            <span class="cmd">> env.reset(task_type="hard")</span>
+                            <span class="out">Observation: variant="R175H", sequence="MEEPQ..."</span>
+                            <span class="cmd">> agent.predict_disease(["Cancer"])</span>
+                            <span class="out warning">Reward: 0.5 (Partial Match)</span>
+                        </div>
+                        <button class="action-btn" onclick="runSimulation('hard')">Simulate Episode</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
