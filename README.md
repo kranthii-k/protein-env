@@ -102,7 +102,7 @@ python3 -m pytest -v tests/unit/ --cov=. --cov-report=term-missing
 
 ## ☁️ Deployment
 
-**Hugging Face Space:** [https://huggingface.co/spaces/Mallhar03/protein-env](https://huggingface.co/spaces/Mallhar03/protein-env)
+**Hugging Face Space:** [https://huggingface.co/spaces/vibe-paglu/protein-env](https://huggingface.co/spaces/vibe-paglu/protein-env)
 > The environment is live and OpenEnv-validated at this endpoint.
 
 ## 📖 License & Acknowledgements 
