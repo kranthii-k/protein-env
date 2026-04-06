@@ -38,9 +38,16 @@ try:
         ProteinObservation,
         env_name="protein-env",
     )
+    _env = ProteinEnvironment()
 except ImportError:
     # openenv_core not on PyPI yet — use a plain FastAPI app.
     app = FastAPI(title="protein-env", version="0.1.0")
+    _env = ProteinEnvironment()
+
+class ResetRequest(BaseModel):
+    task_type: str = "easy"
+    seed: Optional[int] = None
+    episode_id: Optional[str] = None
 
 import os
 from fastapi.staticfiles import StaticFiles
@@ -232,3 +239,23 @@ async def state() -> ProteinState:
         Nothing (errors propagate as 500).
     """
     return _env.state()
+
+
+def main() -> None:
+    """Entry point for the 'server' console script and openenv validate.
+
+    Starts the uvicorn ASGI server for the ProteinEnv FastAPI application.
+    Reads PORT from environment (default 8000) for HF Spaces compatibility.
+    """
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(
+        "server.app:app",
+        host="0.0.0.0",
+        port=port,
+        log_level="info",
+    )
+
+
+if __name__ == "__main__":
+    main()
