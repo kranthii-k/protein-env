@@ -19,7 +19,7 @@ MAX_STEPS_PER_EPISODE: int = 10
 ENV_NAME: str = "protein-env"
 ENV_VERSION: str = "0.1.0"
 SPEC_VERSION: int = 1
-PORT: int = 8000
+PORT: int = 7860
 
 # ── Reward weights — Easy (family classification) ─────────────────────────────
 EASY_EXACT_MATCH_REWARD: float = 1.0

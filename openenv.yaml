@@ -3,7 +3,7 @@ name: protein-env
 type: environment
 runtime: docker
 app: server/app.py
-port: 8000
+port: 7860
 description: >
   ProteinEnv is an OpenEnv environment for training AI agents to predict
   protein function, Gene Ontology terms, and disease-variant associations
