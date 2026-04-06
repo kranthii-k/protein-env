@@ -2,9 +2,14 @@
 title: ProteinEnv
 emoji: 🧬
 colorFrom: blue
-colorTo: indigo
+colorTo: green
 sdk: docker
-pinned: false
+app_port: 7860
+tags:
+  - openenv
+  - protein
+  - esm2
+  - reinforcement-learning
 ---
 
 # ProteinEnv 🧬
